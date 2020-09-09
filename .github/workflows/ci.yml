@@ -1,0 +1,18 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build: 
+
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      # - uses: actions/checkout@v1
+      - name: Run a one-line script
+        run: echo hello world!
+      - name: Run a mutli-line scripe
+        run: |
+          echo Add other actions to build
+          echo test, and deploy project
